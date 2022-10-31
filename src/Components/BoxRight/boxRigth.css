@@ -1,0 +1,29 @@
+.boxRigth {
+    display: flex;
+    background: #fbfbfb;
+    width: 260px;
+    height: 124px;
+    margin-bottom: 39px;
+    background: #fbfbfb;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+    border-radius: 5px;
+}
+
+.boxRigth img {
+    width: 60px;
+    height: 60px;
+    margin: 32px 24px 32px 32px;
+}
+
+.boxRigthText h3 {
+    font-size: 20px;
+    margin-top: 39px;
+}
+
+.boxRigthText p {
+    transform: rotate(0deg);
+    font-size: 14px;
+    color: #74798c;
+    margin-top: -20px;
+    margin-left: 1px;
+}

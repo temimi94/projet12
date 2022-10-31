@@ -1,0 +1,30 @@
+.barActivity {
+    position: absolute;
+    left: 16%;
+    right: 0%;
+    top: 55%;
+    bottom: 0%;
+    width: 835px;
+    height: 320px;
+    background: #fbfbfb;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+}
+
+#tooltipActivity {
+    background-color: #e60000;
+    color: white;
+    width: 39px;
+    height: 53px;
+    padding-top: 10px;
+    border-radius: 0px;
+    border: 0px !important;
+}
+
+.labelActivity {
+    font-size: 7px;
+    margin-left: 5px;
+}
+
+span {
+    font-size: 14px;
+}
