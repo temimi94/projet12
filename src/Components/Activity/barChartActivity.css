@@ -28,3 +28,9 @@
 span {
     font-size: 14px;
 }
+
+.titleActivity {
+    margin-left: 50px;
+    position: absolute;
+    font-size: 12px;
+}

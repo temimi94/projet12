@@ -10,7 +10,6 @@ export default function App() {
         <Route path="/user/:id" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
-    
     </div>
   )
 }

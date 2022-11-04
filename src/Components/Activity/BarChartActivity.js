@@ -15,7 +15,7 @@ import './barChartActivity.css'
 
 /**
  * A bar chart showing user activity, builded with recharts.
-*/
+ */
 
 /*
  * A customised tooltip with recharts (for bar chart only).
@@ -46,24 +46,16 @@ export default function BarChartActivity(props) {
     for (let i = 0; i < data?.length; i++) {
         data[i].day = [1, 2, 3, 4, 5, 6, 7]
     }
-
     return (
         <div>
-            <h6 className="titleActivite">Activité quotidienne</h6>
+            <h6 className="titleActivity">Activité quotidienne</h6>
             <ResponsiveContainer width="100%" height={272}>
                 <BarChart data={data} barCategoryGap="27" barGap="8">
                     <CartesianGrid strokeDasharray="3" vertical={false} />
-
-                    <XAxis
-                        tickLine={false}
-                        domain={['dataMin', 'dataMax']}
-                        tickMargin={15}
-                        tick={{ stroke: '#9B9EAC' }}
-                        interval={0}
-                    />
+                    <XAxis tickLine={false} domain={['dataMin', 'dataMax']} />
                     <YAxis
                         orientation="right"
-                        tickMargin={40}
+                        tickMargin={20}
                         tickCount={3}
                         tickLine={false}
                         domain={['dataMin -1', 'dataMax +2']}
@@ -78,9 +70,7 @@ export default function BarChartActivity(props) {
                         dataKey="calories"
                         tick={false}
                         yAxisId="left"
-                           
                     />
-
                     <Tooltip
                         content={<CustomBar active={true} />}
                         wrapperStyle={{ outline: 'none' }}
@@ -116,6 +106,8 @@ export default function BarChartActivity(props) {
         </div>
     )
 }
+
+//ensemble de validateurs utilisés pour s’assurer que la donnée que je reçois est valide.
 
 BarChartActivity.propTypes = {
     activity: PropTypes.array,

@@ -6,12 +6,12 @@ import PerformanceRadarChart from '../../Components/PerformanceRadarChart/Perfor
 import DashboardTitle from '../../Components/DashboardTitle/DashboardTitle'
 import ScoreRadiaBarChart from '../../Components/ScoreRadiaBarChart/ScoreRadiaBarChart'
 import BarChartActivity from '../../Components/Activity/BarChartActivity'
+import BoxRigth from '../../Components/BoxRight/BoxRigth'
 
 //import Css
 import './dashboard.css'
 
 //import Icons
-import BoxRigth from '../../Components/BoxRight/BoxRigth'
 import caloriesIcon from '../../Images/calories-icon.svg'
 import proteinIcon from '../../Images/protein-icon.svg'
 import fatIcon from '../../Images/fat-icon.svg'
@@ -44,7 +44,7 @@ export default function Dashboard() {
             <Header />
             <Nav />
             <div className="dashboardContent">
-                <DashboardTitle userName={usersData?.userInfos.firstName} />
+                <DashboardTitle firstName={usersData?.userInfos.firstName} />
             </div>
             <div className="dashboard-container">
                 <div className="barActivity">
@@ -65,8 +65,7 @@ export default function Dashboard() {
                             // Backend have 2 differents names for similar data
                             // score check both and multiply them by 100 to have percents on 100
                             score={
-                                (usersData?.todayScore || usersData?.score) *
-                                100
+                                (usersData?.todayScore || usersData?.score) * 100
                             }
                         />
                     </div>
